@@ -1,0 +1,70 @@
+#clockContainer {
+    margin: auto;
+    position: relative;
+    background-color: red;
+    height: 40vw;
+    width: 40vw;
+    margin-top: 5%;
+    background: url(clock.png)no-repeat;
+    background-size: 100%;  
+}
+
+#hour,#minute, #second,#centreDot,#currentMonth{
+
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+
+}
+#centreDot{
+    background-color: rgb(173, 177, 192);
+        height: 4%;
+        width: 4%;
+       top:48.2%;
+       right: 47.5%;
+       z-index:1; /* to bring the dot in front */
+    }
+#hour{
+
+    height: 28%;
+    width: 2%;
+    top: 22%;
+    right: 49.1%;
+transform-origin: bottom;
+/* display:none ; */
+}
+#minute{
+
+    height: 34%;
+    width: 2%;
+    top: 16%;
+    right: 49.1%;
+    transform-origin: bottom;
+    /* display:none ; */
+}
+
+#second{
+background-color: rgb(139, 0, 116);
+    height: 36%;
+    width: 1%;
+    top: 14%;
+    right: 49.4%;
+    transform-origin: bottom;
+    /* display:none ; */
+}
+
+#currentMonth{
+    transform: none;
+    user-select: none   ;
+ background: none;
+    height: 12%;
+   border: none;
+    width: 39%;
+    top: 66%;
+    right: 30.4%;
+    transform-origin: bottom;
+    color: white;
+    font-size: 4vw;
+
+        /* display:none ; */
+    }
